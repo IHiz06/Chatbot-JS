@@ -5,7 +5,7 @@ const chatbotToggler = document.querySelector(".chatbot-toggler");
 const chatbotCloseBtn = document.querySelector(".close-btn");
 
 let userMessage;
-const API_KEY = "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";
+const API_KEY = ""; //API KEY OpenAI
 const inputInitHeight = chatInput.scrollHeight;
 
 
@@ -21,7 +21,7 @@ const createChatLi = (message, className) => {
 
 //AQUI SE REALIZA LA CREACION DE CAHT CON OPENAI
 const generateResponse = (incomingChatLi) => {
-    const API_URL= "https://api.openai.com/v1/chat/completions";
+    const API_URL= "https://api.openai.com/v1/chat/completions"; //Chat Completions
     const messageElement = incomingChatLi.querySelector("p");
 
     const requestOptions = {
